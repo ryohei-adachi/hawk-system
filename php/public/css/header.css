@@ -1,0 +1,150 @@
+.gnav {
+    padding: 3px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 3px -3px rgb(56, 56, 56);
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 90px;
+    height: 50px;
+    margin-top: 10px;
+    padding-right: 380px;
+}
+
+.gnav-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gnav-item {
+    font-family: "Open sans", sans-serif;
+    letter-spacing: .05em;
+    padding: 2px 40px;
+    font-size: 16px;
+    color: #353535;
+}
+
+.gnav-link{
+    position: relative;
+    display: inline-block;
+    padding: 20px 0;
+    transition: .3s; /**/
+    color: rgb(48, 48, 48);
+}
+
+.drawer {
+    visibility: hidden;    
+}
+
+.drawer-list {
+    display: flex;
+}
+
+
+/*media Queries 767*/
+
+@media screen and (max-width: 767px) {
+    .gnav {
+        visibility: hidden;
+    }
+
+    .drawer {
+        visibility:visible;
+        position: fixed;
+    }
+
+    /* チェックボックスは非表示に */
+    .drawer-hidden {
+        display: none;
+    }
+
+    .drawer-list {
+        display: block;
+    }
+
+    /* ハンバーガーアイコンの設置スペース */
+    .drawer-open {
+        display: flex;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 100;/* 重なり順を一番上に */
+        cursor: pointer;
+    }
+
+    /* ハンバーガーメニューのアイコン */
+    .drawer-open span,
+    .drawer-open span:before,
+    .drawer-open span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background: #333;
+        transition: 0.5s;
+        position: absolute;
+    }
+
+    /* 三本線のうち一番上の棒の位置調整 */
+    .drawer-open span:before {
+        bottom: 8px;
+    }
+
+    /* 三本線のうち一番下の棒の位置調整 */
+    .drawer-open span:after {
+        top: 8px;
+    }
+
+    /* アイコンがクリックされたら真ん中の線を透明にする */
+    #drawer-check:checked ~ .drawer-open span {
+        background: rgba(255, 255, 255, 0);
+    }
+
+    /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+    #drawer-check:checked ~ .drawer-open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    #drawer-check:checked ~ .drawer-open span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    /* メニューのデザイン*/
+    .drawer-content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;/* メニューを画面の外に飛ばす */
+        z-index: 99;
+        background: rgb(248, 248, 248);
+        transition: .5s;
+    }
+
+    .drawer-item {
+        font-size: 28px;
+        padding: 20px 5px;
+        border: 1px solid #e0e1e1;
+    }
+
+    .drawer-item:first-child{
+        margin-top: 55px;
+    }
+
+    /* アイコンがクリックされたらメニューを表示 */
+    #drawer-check:checked ~ .drawer-content {
+        left: 0;/* メニューを画面に入れる */
+    }
+}

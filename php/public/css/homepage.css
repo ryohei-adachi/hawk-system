@@ -1,0 +1,335 @@
+* {
+    margin:0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html {
+    display: block;
+    scroll-behavior: smooth;
+}
+
+nav  {
+    list-style: none;
+}
+
+head {
+    display: none;
+}
+
+main {
+    display: block;
+}
+
+body {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+div {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    font-size: 100%;
+    color: black;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.title-section { 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.title {
+    margin-bottom: 30px;
+    padding: 0 10px;
+    text-align: center;
+}
+ 
+.logo-title {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    line-height: 1;
+    letter-spacing: .2em;
+}
+
+
+.section{
+    padding: 150px;
+    display: block;
+    margin-top: 80px;
+}
+
+.inner{
+    max-width: 1100;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.section:nth-of-type(odd){
+    background-color:#F4F4F4;
+}
+
+.section-heading {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.heading-primary {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 15px;
+    letter-spacing: .05em;
+    color: #393939;
+}
+
+.heading-secondary {
+    font-size: 6px;
+    color: #A7A7A7;
+}
+
+.service-section-product {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 40px;
+}
+
+.service-section-hp, .service-section-line, .service-section-smartphone {
+    box-shadow: none;
+    border: 1px solid #e0e1e1;
+    text-align: center;
+    width: 310px;
+    height: 390px;
+}
+
+.hp-img, .line-img, .smartphone-img { 
+    width: 290px;
+    height: 260px;
+    padding-top: 5px;
+}
+
+.service-section-hp-heading, .service-section-line-heading, .service-section-smartphone-heading {
+    font-size: 14px;
+    color: #393939;
+    padding-top: 18px;
+    
+}
+
+.service-section-hp-description {
+    font-size: 12.5px;
+    color: #353535;
+    padding-top: 25px;
+    margin-bottom: 40px;
+}
+
+.service-section-line-description {
+    font-size: 12.3px;
+    color: #353535;
+    padding-top: 25px;
+    margin-bottom: 40px;
+}
+
+.service-section-smartphone-description {
+    font-size: 12.5px;
+    color: #353535;
+    padding-top: 25px;
+    margin-bottom: 40px;
+}
+
+
+.caption {
+    font-size: 130%;
+    text-align: center;
+    color: #fff;
+    padding-top: 80px;
+}
+
+.mask {
+  width: 50%;
+  height: 52%;
+  margin-top: -300px;
+  left: 0;
+  margin-left: 78px;
+  opacity: 0;	/* マスクを表示しない */
+  background-color: rgba(94, 93, 93, 0.4);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.mask:hover {
+  opacity: 1;	/* マスクを表示する */
+  -webkit-transform: scale(2);	/* 2倍に拡大 */
+  transform: scale(2);
+}
+
+.misson-section-sentence {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.misson {
+    color: #121212;
+    font-size: 35px;
+}
+
+.member-section .inner {
+    max-width: 1000px;
+}
+
+.member-item {
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.member-image-wrapper {
+    flex: 0 0 220px;
+}
+
+.member-img {
+    border-radius: 50%;
+    box-shadow: 0 0 25px 0 snow;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.member-name {
+    color: #353535;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.member-body {
+    flex: 1;
+    color: #A7a7a7;
+}
+
+.member-body p:not(:last-child) {
+    margin-top: 5px;
+}
+
+.member-body p:last-child {
+    margin-bottom: 80px;
+}
+
+.contact-section-about {
+    color: #353535;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.contact-section-about h4 {
+    margin-bottom: 65px;
+}
+
+.contact-button {
+    padding:26px 55px;
+    background-color: #0A0A0A;
+    border-radius: 100px;
+    width: 320px;
+    height: 90px;
+    border: none;
+    color: white;
+    margin: 100px auto;
+    margin-bottom: 80px;
+    transition: 0.3s;
+}
+
+.error {
+    font-size: 15px;
+    color: rgb(126, 126, 126);
+    margin-top: 25px;
+    height: 85vh;
+    text-align: center;
+}
+
+.error h2 {
+    padding-top: 230px;
+}
+
+.back-home {
+    margin-top: 40px;
+}
+
+.back-home a:hover {
+    color: blue;
+}
+
+/*media Queries 767*/
+
+@media screen and (max-width: 767px) {
+    .section{
+        padding: 60px 0;
+    }
+    .section .inner {
+        padding:0 15px;
+    }
+    .section-lead {
+        font-size: 10px;
+    }
+    .section-heading{
+        margin-bottom: 20px;
+    }
+    .logo-title {
+        font-size: 21px;
+    }
+    .heading-primary{
+        font-size: 22px;
+    }
+    .heading-secondary{
+        font-size: 12px;
+    }
+    .service-section-product {
+        display: block;
+        margin-left: 33px;
+    }
+    .member-item {
+        display: block;
+    }
+    .misson {
+        font-size: 20px;
+        display: block;
+    }
+    .contact-item {
+        width: 40px;
+        margin: 0 10px;
+    }
+    .error h2 {
+        margin-bottom: 8px;
+    }
+    .error h3 {
+        font-size: 12px;
+    }
+    .mail-send-finish h2 {
+        margin-bottom: 8px;
+    }
+    .mail-send-finish h3 {
+        font-size: 12px;
+    } 
+    .mask {
+	margin: -55px;
+    }
+
+}

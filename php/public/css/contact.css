@@ -1,0 +1,244 @@
+* {
+    margin:0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html {
+    display: block;
+}
+
+nav  {
+    list-style: none;
+}
+
+head {
+    display: none;
+}
+
+main {
+    display: block;
+}
+
+body {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+div {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    font-size: 100%;
+    color: black;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.inner{
+    max-width: 1100;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.contact-header {
+    padding: 0 20px;
+    display: flex; 
+    height: 30vh;
+    background-color: #C8C8C8;
+    margin-bottom: 40px;
+}
+
+.conact-header-title {
+    padding-top: 90px;
+    text-align: left;
+    color: whitesmoke;
+    font-size: 33px;
+}
+
+.contact-form {
+    display: block;
+    margin-left: 60px;
+    font-size: 15px;
+}
+
+.name, .email, .title,.body{
+    border: solid 1px rgb(156, 156, 156);
+    margin-bottom: 20px;
+}
+
+
+.body {
+    margin-bottom: 5px;
+}
+
+.submit-confirm-button button{
+    background-color: rgb(247, 192, 92);
+    color: white;
+    border-radius: 0.25em;
+    margin-bottom: 20px;;
+    font-size: 16px;
+    width: 180px;
+}
+
+.submit-confirm-button button:hover {
+  background: #998307;
+}
+ 
+.submit-confirm-button button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #bb7d0a;
+}
+
+label {
+    display: block;
+    color: rgb(126, 126, 126);
+}
+
+.question {
+    font-size: 15px;
+    color: rgb(126, 126, 126);
+    margin-bottom: 45px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.submit-button {
+    display: flex;
+    margin-top: 125px;
+}
+
+.submit-back-button button{
+    background-color: rgb(221, 172, 37);
+    color: white;
+    border-radius: 0.25em;
+    margin-bottom: 20px;;
+    font-size: 16px;
+    width: 120px;
+}
+
+.submit-back-button button:hover {
+    background: #ad6302;
+}
+   
+.submit-back-button button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ff941a;
+}
+
+.submit-send-button button{
+    background-color: rgb(247, 192, 92);
+    color: white;
+    border-radius: 0.25em;
+    margin-bottom: 20px;;
+    font-size: 16px;
+    width: 110px;
+    margin-left: 12px;
+}
+
+.submit-send-button button:hover {
+    background: #998307;
+}
+   
+.submit-send-button button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #bb7d0a;
+}
+
+.confirm-item {
+    margin-bottom: 20px;
+}
+
+.mail-send-finish {
+    font-size: 15px;
+    color: rgb(126, 126, 126);
+    margin-top: 25px;
+    height: 85vh;
+    text-align: center;
+}
+
+.mail-send-finish h2 {
+    padding-top: 230px;
+}
+
+.back-home {
+    margin-top: 40px;
+}
+
+.back-home a:hover {
+    color: blue;
+}
+
+@media screen and (max-width: 767px) {
+    .inner {
+        padding:0 10px;
+    }
+    .contact-header {
+        padding: 10px 0;
+    }
+    .conact-header-title {
+        margin-left: 10px;
+    }
+    .contact-form {
+        margin-left: 0px;
+        font-size: 13.5px;
+    }
+    label {
+        font-size: 20px;
+    }
+    .error-message {
+        font-size: 16px;
+    }
+    .name, .email, .title, .body {
+        width: 350px;
+    }
+
+    .name, .email, .title {
+        height: 30px;
+    }
+    .body {
+        margin-bottom: 50px;
+    }
+    .submit-confirm-button button {
+        height: 60px;
+        margin-left: 50px;
+        width: 250px;
+        margin-bottom: 70px;
+    }
+    .question {
+        font-size: 18px;
+    }
+    .submit-button {
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .submit-back-button button{ 
+        height: 60px;
+        width: 170px;
+    }
+    .submit-send-button button {
+        height: 60px;
+        width: 170px;
+    }
+
+}
