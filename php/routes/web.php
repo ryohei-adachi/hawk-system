@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/index','App\Http\Controllers\HomePageController@index');
+Route::get('/','App\Http\Controllers\HomePageController@index');
+Route::get('/home','App\Http\Controllers\HomePageController@index');
 Route::get('/contact','App\Http\Controllers\HomePageController@contact');
 Route::get('/hp-service','App\Http\Controllers\HomePageController@hp_service');
 Route::post('/contact/confirm','App\Http\Controllers\HomePageController@confirm');
